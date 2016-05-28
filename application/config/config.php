@@ -3,6 +3,46 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 /*
 |--------------------------------------------------------------------------
+| Base Site Information
+|--------------------------------------------------------------------------
+|
+| This is the base information for the website that will be used on the entire site
+| 
+*/
+
+$config['site_info'] = array(
+
+    'site_name'        => 'Sitelyft',
+    'site_description' => 'Sitelyft specializes in PSD to HTML work! We turn your PhotoShop images into beautiful, pixel-perfect and responsive web pages for a great price!',
+    'site_author'      => 'james Latten',
+    'site_version'     => '0.0.1 Alpha',
+    'site_utf'         => 'UTF-8'
+
+);
+
+/*
+|--------------------------------------------------------------------------
+| Base Site Assets
+|--------------------------------------------------------------------------
+|
+| This is the base assets manifest for the website that will be used on the entire site
+|
+*/
+
+$config['base_stylesheets'] = array(
+
+    'main.css'
+
+);
+
+$config['base_javascript'] = array(
+
+    'main.js'
+
+);
+
+/*
+|--------------------------------------------------------------------------
 | Base Site URL
 |--------------------------------------------------------------------------
 |
@@ -23,7 +63,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = '';
+$config['base_url'] = 'http://localhost/sitelyftstudios/';
 
 /*
 |--------------------------------------------------------------------------
