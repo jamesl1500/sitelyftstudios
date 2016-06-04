@@ -27,9 +27,6 @@ class Home extends CI_Controller {
 		// Load stuff
 		$data['stylesheet'] = 'home';
 
-		// Load header library
-		$this->load->library('Header.php');
-
 		// load the view
 		$this->load->view('templates/header.php', $data);
 		$this->load->view('home');
@@ -38,7 +35,21 @@ class Home extends CI_Controller {
 
 	public function login()
 	{
+		// Pass the site info
+		$data['site_info'] = $this->config->item('site_info');
+		$data['base_url'] = $this->config->item('base_url');
+		$data['site_page'] = 'login';
+
+		// Load stuff
+		$data['stylesheet'] = 'login';
+
+		// Load header library
+		$this->load->library('Login.php');
+
+		// load the view
+		$this->load->view('templates/header.php', $data);
 		$this->load->view('home/login');
+		$this->load->view('templates/footer.php');
 	}
 
 	public function signup()

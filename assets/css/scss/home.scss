@@ -1,5 +1,9 @@
 @import 'main.scss';
 $background: 'https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=c2447a69043e39f174216c5440f0fb2d';
+$secondbackground: 'https://images.unsplash.com/uploads/141103282695035fa1380/95cdfeef?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=e52d8eb0864ecc0a7628d04c5f8f4e42';
+$thirdbackground: 'https://images.unsplash.com/19/desktop.JPG?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=8804c35cd41ea92a7906bfed8cc48a05';
+$fourthbackground: 'https://images.unsplash.com/photo-1455735583493-5ab52897f7eb?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=74366b69fbabcf50582c7add8e2b502f';
+$fifthbackground: 'https://images.unsplash.com/photo-1454165205744-3b78555e5572?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=ca8c08d17555247f7580691500bb5351';
 
 .mainBanner{
   margin-top: 70px;
@@ -75,6 +79,39 @@ $background: 'https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib
   }
 }
 
+.center-this-headline{
+
+  .coverfill{
+
+    .container{
+
+      .box-content{
+
+        float: none;
+
+        .topBoxContentHead{
+          @extend .text-center;
+
+          .divide-small{
+            display: none;
+          }
+        }
+
+        .bottomContent{
+          @extend .text-center;
+
+          float: none;
+          margin: 0% auto !important;
+
+          p {
+            padding-top: 60px;
+          }
+        }
+      }
+    }
+  }
+}
+
 .secondContent{
   height: auto;
   background: darken(#673ab7, 5%);
@@ -87,7 +124,9 @@ $background: 'https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib
   padding-top: 30px;
   padding-bottom: 30px;
 
+
   .innerSecondBanner{
+    padding-left: 0px;
 
     .topHeading{
       padding: 10px;
@@ -141,10 +180,11 @@ $background: 'https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib
   margin-top: 0px;
   margin-bottom: 0px;
 
-  border-bottom: 5px solid darken($primarysuccess, 10%);
+  border-bottom: 5px solid darken($primary_dark_font_color, 10%);
 
 
   .innerThirdBanner{
+    padding-left: 0px;
 
     .topHeading{
 
@@ -193,11 +233,271 @@ $background: 'https://images.unsplash.com/photo-1462331940025-496dfbfc7564?ixlib
 
 .fourthContent{
   height: auto;
-  background: $primarysuccess;
+  background: url($secondbackground);
+  background-size: cover;
+  background-positioN: center;
 
-  padding-top: 50px;
-  padding-bottom: 50px;
+  border-bottom: 5px solid darken($primaryblue, 4%);
+
+  padding: 0px;
 
   margin-top: 0px;
   margin-bottom: 0px;
+
+  .coverfill {
+    height: 100%;
+    width: 100%;
+
+    background: rgba($primarysuccess, 0.7);
+
+    .innerFourthBanner {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      padding-left: 0px;
+
+      .box-content {
+
+        .topBoxContentHead {
+          padding: 10px;
+
+          h3 {
+            font-size: 2.1em;
+            color: white;
+          }
+
+          .divide-small {
+            width: 50px;
+            height: 1.5px;
+            background: white;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+          }
+        }
+
+        .bottomContent {
+          padding: 10px;
+
+          p {
+            color: white;
+            font-size: 1.2em;
+          }
+        }
+      }
+    }
+  }
+}
+
+.smallContent{
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  height: auto;
+
+  background: white;
+
+  border-bottom: 5px solid darken($primarysuccess, 10%);
+
+  .innerSmallContent{
+
+    .smallText{
+
+      h3{
+        margin: 0px;
+        color: $primary_dark_font_color;
+
+        font-size: 2.3em;
+      }
+    }
+  }
+}
+
+.fifthContent{
+  height: auto;
+  background: url($thirdbackground);
+  background-size: cover;
+  background-positioN: center;
+
+  border-bottom: 5px solid darken($primaryblue, 4%);
+
+  padding: 0px;
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  .coverfill {
+    height: 100%;
+    width: 100%;
+
+    background: rgba($primaryblue, 0.7);
+
+    .innerFourthBanner {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      padding-left: 0px;
+
+      .box-content {
+
+        .topBoxContentHead {
+          padding: 10px;
+
+          h3 {
+            font-size: 2.1em;
+            color: white;
+
+          }
+
+          .divide-small {
+            width: 50px;
+            height: 2px;
+            background: white;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+          }
+        }
+
+        .bottomContent {
+          padding: 10px;
+
+          p {
+            color: white;
+            font-size: 1.2em;
+          }
+        }
+      }
+    }
+  }
+}
+
+.sixthContent{
+  height: auto;
+  background: url($fourthbackground);
+  background-size: cover;
+  background-positioN: center;
+
+  border-bottom: 5px solid darken($primary_dark_font_color, 4%);
+
+  padding: 0px;
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  .coverfill {
+    height: 100%;
+    width: 100%;
+
+    background: rgba($primary_dark_font_color, 0.7);
+
+    .innerFourthBanner {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      padding-left: 0px;
+
+      .box-content {
+
+        .topBoxContentHead {
+          padding: 10px;
+
+          h3 {
+            font-size: 2.1em;
+            color: white;
+          }
+
+          .divide-small {
+            width: 50px;
+            height: 1.5px;
+            background: white;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+          }
+        }
+
+        .bottomContent {
+          padding: 10px;
+
+          p {
+            color: white;
+            font-size: 1.2em;
+          }
+        }
+      }
+    }
+  }
+}
+
+.seventhContent{
+  height: auto;
+  background: url($fifthbackground);
+  background-size: cover;
+  background-positioN: center;
+
+  border-bottom: 5px solid darken($primarynavy, 4%);
+
+  padding: 0px;
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  .coverfill {
+    height: 100%;
+    width: 100%;
+
+    background: rgba($primary_dark_font_color, 0.7);
+
+    .innerFourthBanner {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      padding-left: 0px;
+
+      .box-content {
+
+        .topBoxContentHead {
+          padding: 10px;
+
+          h3 {
+            font-size: 2.1em;
+            color: white;
+          }
+
+          .divide-small {
+            width: 50px;
+            height: 1.5px;
+            background: white;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+          }
+        }
+
+        .bottomContent {
+          padding: 10px;
+
+          p {
+            color: white;
+            font-size: 1.2em;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer{
+  background: $primarynavy;
+
+  padding: 25px;
+
+  p{
+    font-size: 1.8em;
+    color: white;
+
+    i{
+      color: $primaryred;
+    }
+  }
 }

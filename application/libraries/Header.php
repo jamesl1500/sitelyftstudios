@@ -5,6 +5,7 @@
 class Header
 {
     protected $default = 'index';
+    public static $base_url = 'http://localhost/sitelyftstudios/';
 
     static public function render($page, $theme = 'transparent-logged-out')
     {
@@ -26,7 +27,7 @@ class Header
                                         <span class="icon-bar"></span>
                                         <span class="icon-bar"></span>
                                     </button>
-                                    <a class="navbar-brand" href="">
+                                    <a class="navbar-brand" href="<?php echo self::$base_url; ?>">
                                         <div class="logo">
                                             <div class="topLogo">
                                                 <h3 class="f500">Sitelyft</h3>
@@ -39,8 +40,8 @@ class Header
                                 </div>
                                 <div class="nav-links-right collapse navbar-collapse" id="main-nav-link-holder">
                                     <ul class="nav navbar-nav navbar-right">
-                                        <li><a href="#">Pricing</a></li>
-                                        <li><a href="#">Login</a></li>
+                                        <li><a href="<?php echo self::$base_url; ?>pricing">Pricing</a></li>
+                                        <li><a href="<?php echo self::$base_url; ?>login">Login</a></li>
                                         <li class="specialNavLinkOrder"><a href="#">Order</a></li>
                                     </ul>
                                 </div>
