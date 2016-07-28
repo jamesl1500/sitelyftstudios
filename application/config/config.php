@@ -63,8 +63,20 @@ $config['base_javascript'] = array(
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/sitelyftstudios/';
+$whitelist = array('127.0.0.1','::1', 'localhost');
+$protocol = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http");
+$base_url = $protocol . "://" . $_SERVER['HTTP_HOST'];
+$complete_url =   $base_url . $_SERVER["REQUEST_URI"];
 
+$root=(isset($_SERVER['HTTPS']) ? "https://" : "http://").$_SERVER['HTTP_HOST'];
+$root.= str_replace(basename($_SERVER['SCRIPT_NAME']), '', $_SERVER['SCRIPT_NAME']);
+
+if(!in_array($_SERVER['REMOTE_ADDR'], $whitelist)) {
+
+    $config['base_url'] = $root;
+}else{
+    $config['base_url'] = $root;
+}
 /*
 |--------------------------------------------------------------------------
 | Index File
