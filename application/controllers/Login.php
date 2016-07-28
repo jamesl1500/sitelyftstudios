@@ -18,6 +18,14 @@ class Login extends CI_Controller
      * map to /index.php/welcome/<method_name>
      * @see https://codeigniter.com/user_guide/general/urls.html
      */
+
+    public $res = array();
+
+    public function __construct() {
+        parent::__construct();
+        $this->load->Model('Login_model');
+    }
+
     public function index()
     {
         // Pass the site info
@@ -27,9 +35,10 @@ class Login extends CI_Controller
 
         // Load stuff
         $data['stylesheet'] = 'login';
+        $data['javascript'] = 'login';
 
         // Load header library
-        $this->load->library('Login.php');
+        $this->load->library('LoginSystem.php');
 
         // load the view
         $this->load->view('templates/header.php', $data);
@@ -37,7 +46,30 @@ class Login extends CI_Controller
         $this->load->view('templates/footer.php');
     }
 
-    public function loginProcess(){
-        
+    /*
+     * This will server as the controller function that ajax called to login the user
+     */
+    public function loginProcess()
+    {
+        if(isset($_POST['email']) && isset($_POST['password']))
+        {
+            $email = $this->input->post('email');
+            $password = $this->input->post('password');
+
+            if ($email != "" && $password != "" && !empty($email) && !empty($password))
+            {
+                // Now use the model for authorization
+                $this->Login_model->login($email, $password);
+            } else
+            {
+                $this->res['code'] = 0;
+                $this->res['string'] = "Please enter a email and password";
+
+                echo json_encode($this->res);
+                return false;
+            }
+        }else{
+            redirect('/login' ,'refresh');
+        }
     }
 }

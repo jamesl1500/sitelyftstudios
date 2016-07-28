@@ -5,6 +5,10 @@ $thirdbackground: 'https://images.unsplash.com/19/desktop.JPG?ixlib=rb-0.3.5&q=8
 $fourthbackground: 'https://images.unsplash.com/photo-1455735583493-5ab52897f7eb?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=74366b69fbabcf50582c7add8e2b502f';
 $fifthbackground: 'https://images.unsplash.com/photo-1454165205744-3b78555e5572?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=ca8c08d17555247f7580691500bb5351';
 
+.navbar-logged-out{
+  @extend .noBoxShadow;
+}
+
 .mainBanner{
   margin-top: 70px;
   margin-bottom: 0px;
@@ -190,11 +194,54 @@ $fifthbackground: 'https://images.unsplash.com/photo-1454165205744-3b78555e5572?
 
     }
 
+
+
     .list-holder{
       padding-top: 50px;
 
       float: none;
       margin:0% auto;
+
+      .service_box{
+        background: $primarypurple;
+        padding: 5px;
+
+        border: 1px solid rgba(0,0,0,.3);
+
+        height: 310px;
+
+        .icon_top{
+          padding-top: 25px;
+
+          h3{
+            color: white;
+            font-size: 3em;
+          }
+        }
+
+        .bottomItem{
+          .title{
+            padding-top:15px;
+
+            h3{
+              font-size: 2em;
+              color: white;
+            }
+          }
+
+          .desc{
+            padding: 10px;
+            padding-top: 15px;
+
+            p{
+              font-size: 1.1em;
+              color: white;
+
+              text-align: center;
+            }
+          }
+        }
+      }
 
       .list-item{
         padding: 10px;
@@ -375,7 +422,7 @@ $fifthbackground: 'https://images.unsplash.com/photo-1454165205744-3b78555e5572?
 
 .sixthContent{
   height: auto;
-  background: url($fourthbackground);
+  background: url($fifthbackground);
   background-size: cover;
   background-positioN: center;
 
@@ -432,7 +479,7 @@ $fifthbackground: 'https://images.unsplash.com/photo-1454165205744-3b78555e5572?
 
 .seventhContent{
   height: auto;
-  background: url($fifthbackground);
+  background: url($fourthbackground);
   background-size: cover;
   background-positioN: center;
 

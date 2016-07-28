@@ -6,8 +6,7 @@ Copyright @ james Latten
 class Encryption
 {
     private $salt_length = 12;
-
-    private $salt_key = 'sitelyftkeyaccess12345678910cooley12'; 
+    public $salt_key = 'sitelyftkeyaccess12345678910cool';
 
 	/* 
 		This function will create a unique and random hash!
@@ -18,11 +17,11 @@ class Encryption
     }
 	
 	/*
-		This is the main funciton that will encrypt the string and return it back to you in its encrypted state. Its using the MCrypt library built into PHP
+		This is the main function that will encrypt the string and return it back to you in its encrypted state. Its using the MCrypt library built into PHP
 	*/
     public function encryptText($data)
     {
-        $data = rtrim(base64_encode(mcrypt_encrypt(MCRYPT_RIJNDAEL_256, $this->_salt_key, $data, MCRYPT_MODE_ECB)));
+        $data = rtrim(base64_encode(mcrypt_encrypt(MCRYPT_RIJNDAEL_256, $this->salt_key, $data, MCRYPT_MODE_ECB)));
         return $data;
     }
 
@@ -31,9 +30,7 @@ class Encryption
 	*/
     public function decryptText($data)
     {
-        $data = rtrim(mcrypt_decrypt(MCRYPT_RIJNDAEL_256, $this->_salt_key, base64_decode($data), MCRYPT_MODE_ECB));
+        $data = rtrim(mcrypt_decrypt(MCRYPT_RIJNDAEL_256, $this->salt_key, base64_decode($data), MCRYPT_MODE_ECB));
         return $data;
     }
 }
-
-?>

@@ -33,6 +33,26 @@ class Home extends CI_Controller {
 		$this->load->view('templates/footer.php');
 	}
 
+	public function about_us()
+	{
+		// Pass the site info
+		$data['site_info'] = $this->config->item('site_info');
+		$data['base_url'] = $this->config->item('base_url');
+		$data['site_page'] = 'about';
+
+		// Load stuff
+		$data['stylesheet'] = 'about_us';
+
+		// Load header library
+		//$this->load->library('Login.php');
+
+		// load the view
+		$this->load->view('templates/header.php', $data);
+		$this->load->view('home/about_us');
+		$this->load->view('templates/footer.php');
+	}
+
+
 	public function login()
 	{
 		// Pass the site info
@@ -51,6 +71,8 @@ class Home extends CI_Controller {
 		$this->load->view('home/login');
 		$this->load->view('templates/footer.php');
 	}
+	
+	
 
 	public function signup()
 	{

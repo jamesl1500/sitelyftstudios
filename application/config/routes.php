@@ -54,15 +54,27 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['pricing'] = 'home/pricing';
+$route['about_us'] = 'home/about_us';
+
 
 // For login
 $route['login'] = 'login';
 $route['login/loginProcess'] = 'login/loginProcess';
 
 // For signup
-$route['signup'] = 'home/signup';
+$route['signup'] = 'signup';
+$route['signup/signupProcess'] = 'signup/signupProcess';
+$route['signup/activate/(:any)'] = 'signup/activate/$1';
 
-// For forgot Password
-$route['forgot_password'] = 'home/forgot_password';
+/*
+ * Forgot password
+ */
+$route['forgot_password'] = 'forgot_password';
+$route['forgot_password/change_pass/(:any)/(:any)'] = 'forgot_password/change_pass/$1/$2';
+
+// AJAX
+$route['forgot_password/request'] = 'forgot_password/request';
+$route['forgot_password/change_pass/changeProcess'] = 'forgot_password/changeProcess';
+
 
 

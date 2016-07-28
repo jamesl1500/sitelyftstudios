@@ -1,0 +1,54 @@
+@import 'main.scss';
+
+.navbar-logged-out{
+  @extend .noBoxShadow;
+}
+
+.f{
+  padding-right: 5px !important;
+}
+
+.l{
+  padding-left: 5px !important;
+}
+
+@media screen and (min-width: 1200px) {
+  .col-lg-2 {
+    width: 350px !important;
+  }
+}
+
+.mainSignupFullCont{
+  width: 100%;
+  margin-top: 200px;
+
+  @media screen and (max-width: 500px) {
+    margin-top: 90px;
+  }
+    .headEl{
+    padding: 5px;
+    margin-bottom: 5px;
+
+    h3{
+      font-size: 1.4em;
+      color: $primary_font_color;
+    }
+  }
+
+  .middleSignupCont{
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    form {
+      input[type='submit'] {
+        float: none;
+      }
+    }
+  }
+
+  .bottomForm{
+    border-top: 1px solid #ddd;
+
+    padding-top: 10px;
+  }
+}

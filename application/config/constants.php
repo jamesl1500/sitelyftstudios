@@ -1,6 +1,117 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+// Global Vars
+define('APP_URL', 'http://localhost/newrouket/');
+define('SITE_NAME', 'Frindse');
+define('SITE_DESCRIPTION','Frindse is a simple social network that lets you meet new people and have fun with all your friends');
+define('SITE_VERSION','0.0.1');
+define('SITE_TAGS','');
+define('SITE_ROOT',realpath(dirname(dirname(__FILE__))));
+define('SITE_VER','1.1');
+
+/* Encryption HASH */
+define('FRINDSE_HASH_KEY',md5('ilikecodingZHwJwq5ycfhwrPtLnQK8'));
+
+
+// Sessions and cookies
+define('COOKIE_EXPIRY', time() + 2 * 7 * 24 * 3600);
+define('COOKIE_NAME', 'remember_cache');
+
+/* Coat data main dir */
+define('CHAT_DATA_PATH', 'ch_dta_87412230921295366287');
+
+/* Conversation data */
+define('CONVO_DIR_DATA_PATH_ONE', 'c_d_p_oneo8b0Ke3eVbsIf1o3HxfF');
+define('CONVO_DIR_DATA_PATH_TWO', 'c_d_p_two_ryiHO6YB4OWCWhL5yCeE');
+
+define('CONVO_DIR_DATA_PATH_FOR_PHOTOS','Cp_D-2c8DmAWwLv-');
+define('CONVO_DIR_DATA_PATH_FOR_FILES','Cf_D-fPuwr0xK13-');
+
+// Database tables
+define('REMEMBER_ME','remember_me');
+define('API_KEYS','api_keys');
+define('USERS_TABLE','users');
+define('FORGOT_PASSWORD','forgot_pasword');
+define('FRIEND_REQUESTS','friend_requests');
+define('RELATIONSHIPS','relationships');
+define('MESSAGES','mesages');
+define('PERSONLIKING','personLiking');
+define('NOTES','notes');
+define('USER_INFO','user_info');
+define('PRIVACY','privacy');
+define('TAPS','tap');
+define('BLOCKS','blocks');
+define('HASHTAGS','hashtags');
+define('EMAIL_NOTIFICATIONS','email_notifications');
+define('ACHIEVEMENTS_TYPES','achievement_types');
+define('RANK_TYPES','rank_types');
+define('POST_REPORTS','post_reports');
+define('PERSON_RATES','person_rates');
+define('OPEN_TIMELINE_CHATS','open_timeline_chats');
+define("PROFILE_VIEWERS","profile_viewers");
+
+define("QUESTIONS","questions");$questions_rows = array('id' => 'id', 'question_title' => 'question_title', 'question_userto' => 'question_userto', 'question_userfrom' => 'question_userfrom', 'question_unique_id' => 'question_unique_id', 'question_privacy');
+define("QUESTION_ANSWERS","question_answers");$questions_answers_rows = array();
+
+// Timeline Tables
+define("TIMELINE_ITEM", "timeline_item");
+define("TIMELINE_POST_COMMENTS","timeline_post_comments");
+define("TIMELINE_ITEM_TEXT", "timeline_item_text");
+define("TIMELINE_ITEM_PERSONLIKE","	timeline_item_personlike");
+define("TIMELINE_ITEM_VIDEO","timeline_item_videos");
+define("TIMELINE_ITEM_PHOTO","timeline_item_photo");
+define("TIMELINE_ITEM_FRIENDS","timeline_item_friends");
+define("TIMELINE_POST_COMMENTS_LIKES","timeline_post_comments_likes");
+define("TIMELINE_ITEM_MUSIC","timeline_item_music");
+define("TIMELINE_POST_LIKES","timeline_post_likes");
+define("TIMELINE_ITEM_ACTIVITY","timeline_item_activity");
+define("TIMELINE_ITEM_CLIQUE_SHARE","timeline_item_clique_share");
+define("TIMELINE_ITEM_SHARE","timeline_item_share");
+define("TIMELINE_ITEM_ORIGINAL_VIDEOS","timeline_item_original_videos");
+define("TIMELINE_ITEM_CHAT_INVITE","timeline_item_chat_invite");
+
+// Albums tables
+define("PHOTO_ALBUMS","photo_albums");
+define("PHOTOS","photos");
+define("PHOTO_TAGS","photo_tags");
+
+// Profile Blocks
+define('PROFILE_BLOCKS', 'profileblocks');
+define('FAVORITES_BLOCKS', 'favoritesblock');
+define('CONTACT_INFO_BLOCK','contactinfoblock');
+define('FAMILY_BLOCK','familyblock');
+
+// Chats Tables
+define('CHATS', 'chats');
+define('CHAT_MEMBERS','chat_members');
+define('CHAT_MESSAGES_ITEM','chat_messages_item');
+define('CHAT_MESSAGE_ITEM_NOTE','chat_message_item_note');
+define('CHAT_MESSAGE_ITEM_TEXT','chat_message_item_text');
+define('CHAT_MESSAGE_ITEM_VIDEO','chat_message_item_video');
+define('CHAT_MESSAGE_ITEM_PICTURE','chat_message_item_picture');
+define('CHAT_MESSAGES_ITEM_USERJOINED','chat_message_item_userJoined');
+define('CHAT_MESSAGE_ITEM_USERLEFT','chat_message_item_userLeft');
+
+// Cliques
+define('CLIQUES','cliques');
+define('CLIQUE_MEMBERS','clique_members');
+define('CLIQUE_REQUESTS','clique_requests');
+
+// Conversations
+define('CONVERSATIONS', 'conversations');
+define('CONVERSATION_MESSAGES', 'conversation_messages');
+define('CONVERSATION_MESSAGE_TYPE_PHOTO', 'conversation_message_type_photo');
+define('CONVERSATION_MESSAGE_TYPE_VIDEO', 'conversation_message_type_video');
+define('CONVERSATION_MESSAGE_TYPE_FILE', 'conversation_message_type_file');
+
+// Sayings
+define('MESSAGE_SQL_ERROR', 'Sorry, '.SITE_NAME.' made a little mistake! Please try again.');
+define('MESSAGE_USER_NO_EXIST', "Sorry but this person dosen't exist!");
+
+define('MESSAGE_CONVERSATION_ALR_MADE', 'A conversation has already been made');
+define('MESSAGE_CONVERSATION_CANT_BE_DUP', 'You cant send a message to yourself silly!');
+
 /*
 |--------------------------------------------------------------------------
 | Display Debug backtrace

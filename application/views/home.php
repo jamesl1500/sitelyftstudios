@@ -2,13 +2,13 @@
     <div class="coverfill cover">
         <div class="innerMainbanner container">
             <div class="topBrandTell">
-                <h3 class="f500">PSD to HTML</h3>
+                <h3 class="f300">Welcome to <span class="f500">Sitelyft</span></b></h3>
             </div>
             <div class="middleBrandTell">
-                <p>We specialize in bringing your PhotoShop, Illustrator, InDesign, and Sketch files to life!</p>
+                <p>We provide professional Front-end & Back-end Website Development, Website Maintenance, SEO Optimization, and PSD to HTML services!</p>
             </div>
             <div class="bottomBrandTell col-lg-12 col-md-12 col-sm-12 col-xs- 12 text-center">
-                <a href="" class="btn btn-embossed btn-success">Lets Do This!</a>
+                <a href="<?php echo base_url(); ?>contact_us" class="btn btn-embossed btn-success">Contact Us Now</a>
             </div>
         </div>
     </div>
@@ -21,10 +21,10 @@
         <div class="list-holder">
             <div class="box col-lg-4 col-md-4 col-sm-4">
                 <div class="topBox">
-                    <h3>MODERN AND CUTTING EDGE TECHNOLOGY</h3>
+                    <h3>WE'RE FAST AND AFFORDABLE</h3>
                 </div>
                 <div class="bottomBox">
-                    <p>We use the latest and greatest in technology to give your pages meaning! We only use the best standards to give you quality code that will make your site stand out</p>
+                    <p>We give the best hourly rate or best fixed rate for your needs! We wont overcharge you and we wont empty your pockets.</p>
                 </div>
             </div>
             <div class="box col-lg-4 col-md-4 col-sm-4">
@@ -32,15 +32,15 @@
                     <h3>RESPONSIVE AND MOBILE-FRIENDLY PAGES</h3>
                 </div>
                 <div class="bottomBox">
-                    <p>We always make sure that your pages are responsive and mobile-friendly! We take responsiveness seriously here at Sitelyft because we want your pages to look beautiful on all devices.</p>
+                    <p>By devault every website we create for you will be responsive and mobile friendly! That's our standard and will always be our standard.</p>
                 </div>
             </div>
             <div class="box col-lg-4 col-md-4 col-sm-4">
                 <div class="topBox">
-                    <h3>FASTER LOADING WEB PAGES & SEO FRIENDLY</h3>
+                    <h3>AMAZING COMMUNICATION AND FAST TURNAROUNDS</h3>
                 </div>
                 <div class="bottomBox">
-                    <p>All the web pages we make are proven to be fast and efficient for your website. We also take care of your SEO needs as well so your web pages can be found easily on the web!</p>
+                    <p>We are commited to giving you the best in customer service! We make sure we get your work done fast and we also make sure we communicate with you regularly.</p>
                 </div>
             </div>
         </div>
@@ -62,7 +62,7 @@
                     <div class="divide-small"></div>
                 </div>
                 <div class="bottomContent">
-                    <p class="f500">We dont procrastinate on our work. As soon as you make your order we get started on making your web pages. We understand that time is money, thats why we make sure we make sure we start building for you the second you make your order!</p>
+                    <p class="f500">We dont procrastinate on our work! As soon as you give us a task to do no matter how big or small it is, we will get started on it that very second. We wont push your tasks to the side, we make you a priority.</p>
                 </div>
             </div>
             <div class="box-content image-holder pull-right col-lg-4">
@@ -76,11 +76,11 @@
         <div class="innerFourthBanner cover container">
             <div class="box-content pull-right col-lg-5 clearfix">
                 <div class="topBoxContentHead col-lg-12 clearfix">
-                    <h3 class="f500">WE SUPPORT ALL POPULAR PLATFORMS</h3>
+                    <h3 class="f500">WE PROVIDE GREAT COMMUNICATION WITH ALL OUR CLIENTS</h3>
                     <div class="divide-small"></div>
                 </div>
                 <div class="bottomContent">
-                    <p class="f500">We dont just work with PhotoShop file, we also work with InDesign, Illustrator, Fireworks, Sketch even JPG or PNG photos! We work with everything and can give you the same great quality with all of your files!</p>
+                    <p class="f500">We make sure that we keep in touch with our clients. We will make daily contact with you to make sure you're in the know of whats going pon! We also will take screenshots of our progress daily as well and send them too you.</p>
                 </div>
             </div>
             <div class="box-content image-holder pull-left col-lg-4">
@@ -94,11 +94,11 @@
         <div class="innerFourthBanner cover container">
             <div class="box-content pull-left col-lg-5 clearfix">
                 <div class="topBoxContentHead col-lg-12 clearfix">
-                    <h3 class="f500">A GREAT EXPERIENCE ON ALL SCREENS AND DEVICES</h3>
+                    <h3 class="f500">WE PROVIDE QUALITY AND BUG FREE CODE</h3>
                     <div class="divide-small"></div>
                 </div>
                 <div class="bottomContent">
-                    <p class="f500">We dont just work with PhotoShop file, we also work with InDesign, Illustrator, Fireworks, Sketch even JPG or PNG photos! We work with everything and can give you the same great quality with all of your files!</p>
+                    <p class="f500">We make sure that we don't give you broken code or a broken Website. We provide the best code to our clients and we thoroughly test every line of code we create to make sure we get it right the first time!</p>
                 </div>
             </div>
             <div class="box-content image-holder pull-right col-lg-4">
@@ -110,31 +110,59 @@
 <div class="jumbotron thirdContent">
     <div class="innerThirdBanner container">
         <div class="topHeading col-lg-12 col-md-12 col-sm-12 col-xs- 12 text-center">
-            <h3 class="f500">HOW DOES THIS WORK?</h3>
+            <h3 class="f500">OUR SERVICES</h3>
         </div>
-        <div class="list-holder col-lg-8 col-md-8 col-sm-8 col-xs-12">
-            <div class="list-item clearfix">
-                <div class="list-number-holder pull-left">
-                    <div class="numCircle f500">1</div>
+        <div class="list-holder col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="service_box col-lg-3">
+                <div class="icon_top">
+                    <h3 class="text-center"><i class="fa fa-code" aria-hidden="true"></i></h3>
                 </div>
-                <div class="list-body-content col-lg-11 col-md-11 col-sm-11 col-xs-10 pull-right">
-                    <p><span class="f500 l-bold">Send in your files!</span> - <span class="f300 l-small">All you have to do is send in your PhotoShop, Illustrator, InDesign, or/and Sketch files to us!</span></p>
-                </div>
-            </div>
-            <div class="list-item clearfix">
-                <div class="list-number-holder pull-left">
-                    <div class="numCircle f500">2</div>
-                </div>
-                <div class="list-body-content col-lg-11col-md-11 col-sm-11 col-xs-10 pull-right">
-                    <p><span class="f500 l-bold">Tell us more!</span> - <span class="f300 l-small">This is your time to tell us what more you need with your pages! Colors, boldness, spacing whatever it is that you need.</span></p>
+                <div class="bottomItem">
+                    <div class="title">
+                        <h3 class="text-center f500">Website Development</h3>
+                    </div>
+                    <div class="desc">
+                        <p>We provide professional Front-end and Back-end development to you. We can create meaningful websites for you and provide quality code also.</p>
+                    </div>
                 </div>
             </div>
-            <div class="list-item clearfix">
-                <div class="list-number-holder pull-left">
-                    <div class="numCircle f500">3</div>
+            <div class="service_box col-lg-3">
+                <div class="icon_top">
+                    <h3 class="text-center"><i class="fa fa-wrench" aria-hidden="true"></i></h3>
                 </div>
-                <div class="list-body-content col-lg-11 col-md-11 col-sm-11 col-xs-10 pull-right">
-                    <p><span class="f500 l-bold">Sit back and relax!</span> - <span class="f300 l-small">After you finish your order we will quickly get started on making your pages and have them finished for you in 3-5 days!</span></p>
+                <div class="bottomItem">
+                    <div class="title">
+                        <h3 class="text-center f500">Website Maintenance</h3>
+                    </div>
+                    <div class="desc">
+                        <p>We are here to help tweak and customize your website! We can also fix any issues and bugs you may have on any website you own. Give us a list of tasks and well finish them in no time.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service_box col-lg-3">
+                <div class="icon_top">
+                    <h3 class="text-center"><i class="fa fa-line-chart" aria-hidden="true"></i></h3>
+                </div>
+                <div class="bottomItem">
+                    <div class="title">
+                        <h3 class="text-center f500">SEO Optimization</h3>
+                    </div>
+                    <div class="desc">
+                        <p>Need to get your site out there?? We can get your website listed in all the top search engines. We can also make sure your website is seen by everyone by placing your site at the top of search results</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service_box col-lg-3">
+                <div class="icon_top">
+                    <h3 class="text-center"><i class="fa fa-paint-brush" aria-hidden="true"></i></h3>
+                </div>
+                <div class="bottomItem">
+                    <div class="title">
+                        <h3 class="text-center f500">PSD to HTML</h3>
+                    </div>
+                    <div class="desc">
+                        <p>We can take your PhotoShop, InDesign, and Illustrator files and turn them into a pixel-perfect and responsive website! We will make sure its bug free also.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -145,11 +173,11 @@
         <div class="innerFourthBanner cover container">
             <div class="box-content pull-left col-lg-12 clearfix">
                 <div class="topBoxContentHead col-lg-12 clearfix">
-                    <h3 class="f500">WE ONLY MAKE HIGH QUALITY CODE</h3>
+                    <h3 class="f500">CONTACT US NOW</h3>
                     <div class="divide-small"></div>
                 </div>
                 <div class="bottomContent col-lg-10">
-                    <p class="f500">We never give you junky and low-quality code. All of our HTML, and CSS code are proven to be high quality and heavily commented so you can easily implement your design into your website! We never take shortcuts we only give clean and organized code to you.</p>
+                    <p class="f500">Email: james@sitelyftstudios.com / Phone Number: 216-889-7822</p>
                 </div>
             </div>
             <div class="box-content image-holder pull-right col-lg-4">

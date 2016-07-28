@@ -14,7 +14,7 @@
     <title><?php echo $site_info['site_name']; ?><?php echo isset($title_addition) ? ' | ' . $title_addition : ''; ?></title>
 
     <!-- Stylesheets -->
-    <link href="<?php $base_url; ?>assets/css/<?php echo $stylesheet; ?>.css" rel="stylesheet">
+    <link href="<?php echo base_url('assets/css/'); ?>/<?php echo $stylesheet; ?>.css" rel="stylesheet">
     <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"> -->
     <script src="https://use.fontawesome.com/b38b622847.js"></script>
 </head>
