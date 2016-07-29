@@ -15,7 +15,7 @@
 </div>
 <div class="jumbotron secondContent">
     <div class="innerSecondBanner container">
-        <div class="topHeading col-lg-12 col-md-12 col-sm-12 col-xs- 12 text-center">
+        <div class="topHeading col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
             <h3 class="f500">WHY CHOOSE US?</h3>
         </div>
         <div class="list-holder">
@@ -171,12 +171,12 @@
 <div class="jumbotron seventhContent center-this-headline">
     <div class="coverfill">
         <div class="innerFourthBanner cover container">
-            <div class="box-content pull-left col-lg-12 clearfix">
-                <div class="topBoxContentHead col-lg-12 clearfix">
+            <div class="box-content pull-left col-lg-12 col-md-12 col-sm-12 col-xs-12 clearfix">
+                <div class="topBoxContentHead col-lg-12 col-md-12 col-sm-12 col-xs-12 clearfix">
                     <h3 class="f500">CONTACT US NOW</h3>
                     <div class="divide-small"></div>
                 </div>
-                <div class="bottomContent col-lg-10">
+                <div class="bottomContent col-lg-10 col-md-12 col-sm-12 col-xs-12">
                     <p class="f500">Email: james@sitelyftstudios.com / Phone Number: 216-889-7822</p>
                 </div>
             </div>

@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="shortcut icon" type="image/png" href="<?php echo base_url('assets/images/icons/sitelyft-circle-logo.png'); ?>"/>
+
     <!-- SEO Meta -->
     <meta name="description" content="<?php echo $site_info['site_description']; ?>">
     <meta http-equiv="content-type" content="text/html;charset=<?php echo $site_info['site_utf']; ?>">
