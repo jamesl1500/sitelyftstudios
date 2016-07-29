@@ -9,6 +9,9 @@ class Header
 
     static public function render($page, $theme = 'transparent-logged-out')
     {
+        $base_url=(isset($_SERVER['HTTPS']) ? "https://" : "http://").$_SERVER['HTTP_HOST'];
+        $base_url.= str_replace(basename($_SERVER['SCRIPT_NAME']), '', $_SERVER['SCRIPT_NAME']);
+
         if(!empty($page) && !empty($theme))
         {
             // Switch between the themes
@@ -42,10 +45,10 @@ class Header
                                 </div>
                                 <div class="nav-links-right collapse navbar-collapse" id="main-nav-link-holder">
                                     <ul class="nav navbar-nav navbar-right">
-                                        <li><a href="<?php echo self::$base_url; ?>about_us">About Us</a></li>
-                                        <li><a href="<?php echo self::$base_url; ?>our_services">Our Services</a></li>
-                                        <li><a href="<?php echo self::$base_url; ?>pricing">Pricing</a></li>
-                                        <li><a href="<?php echo self::$base_url; ?>pricing">Contact Us</a></li>
+                                        <li><a href="<?php echo $base_url; ?>about_us">About Us</a></li>
+                                        <li><a href="<?php echo $base_url; ?>our_services">Our Services</a></li>
+                                        <li><a href="<?php echo $base_url; ?>pricing">Pricing</a></li>
+                                        <li><a href="<?php echo $base_url; ?>pricing">Contact Us</a></li>
                                     </ul>
                                 </div>
                             </div>
