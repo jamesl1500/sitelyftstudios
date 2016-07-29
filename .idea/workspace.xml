@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="fff28968-cfc6-4dd9-9036-bc00a3887425" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/libraries/Header.php" afterPath="$PROJECT_DIR$/application/libraries/Header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/home/about_us.php" afterPath="$PROJECT_DIR$/application/views/home/about_us.php" />
     </list>
     <ignored path="sitelyftstudios.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,8 +49,8 @@
           <file leaf-file-name="Header.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/application/libraries/Header.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="736">
-                  <caret line="50" column="64" selection-start-line="50" selection-start-column="64" selection-end-line="50" selection-end-column="64" />
+                <state relative-caret-position="150">
+                  <caret line="33" column="72" selection-start-line="33" selection-start-column="72" selection-end-line="33" selection-end-column="72" />
                   <folding />
                 </state>
               </provider>
@@ -567,12 +566,12 @@
       <workItem from="1467735633112" duration="2180000" />
       <workItem from="1467859692550" duration="23000" />
       <workItem from="1469593021130" duration="5267000" />
-      <workItem from="1469724921998" duration="519000" />
+      <workItem from="1469724921998" duration="576000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110771000" />
+    <option name="totallyTimeSpent" value="110828000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2560" y="0" width="1920" height="1080" extended-state="6" />
@@ -994,8 +993,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/libraries/Header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="50" column="64" selection-start-line="50" selection-start-column="64" selection-end-line="50" selection-end-column="64" />
+        <state relative-caret-position="150">
+          <caret line="33" column="72" selection-start-line="33" selection-start-column="72" selection-end-line="33" selection-end-column="72" />
           <folding />
         </state>
       </provider>

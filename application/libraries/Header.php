@@ -31,7 +31,7 @@ class Header
                                         <span class="icon-bar"></span>
                                         <span class="icon-bar"></span>
                                     </button>
-                                    <a class="navbar-brand" href="<?php echo self::$base_url; ?>">
+                                    <a class="navbar-brand" href="<?php $base_url; ?>">
                                         <!--<div class="logo">
                                             <div class="topLogo">
                                                 <h3 class="f500">Sitelyft</h3>
