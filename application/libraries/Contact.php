@@ -43,10 +43,14 @@ class Contact
             {
                 // Uh so i guess we just send the message?
                 $headers = 'From: '. $fullname .' <' . $email . '>' . "\r\n" . 'Reply-To: james@sitelyftstudios.com' . "\r\n" . 'X-Mailer: PHP/' . phpversion();
-                mail('james@sitelyftstudios.com', $subject, $message, $headers);
-
-                echo $this->_CI->response->make("Your message has been sent!", 'JSON', 1);
-                return false;
+                if(mail('james@sitelyftstudios.com', $subject, $message, $headers))
+                {
+                    echo $this->_CI->response->make("Your message has been sent!", 'JSON', 1);
+                    return false;
+                }else{
+                    echo $this->_CI->response->make("OOPS! Please try that again", 'JSON', 0);
+                    return false;
+                }
             }else{
                 echo $this->_CI->response->make("This is not a valid email!", 'JSON', 0);
                 return false;
