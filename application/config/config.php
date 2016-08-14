@@ -13,7 +13,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $config['site_info'] = array(
 
     'site_name'        => 'Sitelyft',
-    'site_description' => 'Sitelyft specializes in PSD to HTML work! We turn your PhotoShop images into beautiful, pixel-perfect and responsive web pages for a great price!',
+    'site_description' => 'Sitelyft Studios specializes in Website Development! Let us create your next website!',
     'site_author'      => 'james Latten',
     'site_version'     => '0.0.1 Alpha',
     'site_utf'         => 'UTF-8'
