@@ -11,7 +11,6 @@
     <!-- SEO Meta -->
     <meta name="description" content="<?php echo $site_info['site_description']; ?>">
     <meta http-equiv="content-type" content="text/html;charset=<?php echo $site_info['site_utf']; ?>">
-    <meta name="google-site-verification" content="yuQ6iLwS7b-jRXL4tE2dneiyffrTJ5dWrjHBQTq2jdo" />
 
     <!-- Title -->
     <title><?php echo $site_info['site_name']; ?><?php echo isset($title_addition) ? ' | ' . $title_addition : ''; ?></title>
@@ -31,6 +30,7 @@
         ga('send', 'pageview');
 
     </script>
+    <meta name="google-site-verification" content="yuQ6iLwS7b-jRXL4tE2dneiyffrTJ5dWrjHBQTq2jdo" />
 </head>
 <body>
 <?php $this->header->render($site_page); ?>
