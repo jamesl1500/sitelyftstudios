@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fff28968-cfc6-4dd9-9036-bc00a3887425" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/libraries/Header.php" afterPath="$PROJECT_DIR$/application/libraries/Header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/libraries/Contact.php" afterPath="$PROJECT_DIR$/application/libraries/Contact.php" />
     </list>
     <ignored path="sitelyftstudios.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,7 +24,7 @@
     <favorites_list name="sitelyftstudios" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.43037975">
+    <splitter split-orientation="horizontal" split-proportion="0.60414267">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
@@ -56,17 +57,33 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Contact.php" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Contact.php" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/application/libraries/Contact.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-                  <folding />
+                <state relative-caret-position="726">
+                  <caret line="57" column="46" selection-start-line="57" selection-start-column="46" selection-end-line="57" selection-end-column="46" />
+                  <folding>
+                    <marker date="1471146231000" expanded="true" signature="1735:1801" placeholder="INSERT INTO mail... " />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Header.php" pinned="false" current-in-tab="true">
+          <file leaf-file-name="LoginSystem.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/application/libraries/LoginSystem.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="413">
+                  <caret line="103" column="27" selection-start-line="101" selection-start-column="20" selection-end-line="105" selection-end-column="23" />
+                  <folding>
+                    <marker date="1465091664000" expanded="true" signature="1057:1100" placeholder="SELECT * FRO... sl_clients" />
+                    <marker date="1465091664000" expanded="true" signature="2787:2883" placeholder="SELECT id, a... sl_clients" />
+                    <marker date="1465091664000" expanded="true" signature="3367:3462" placeholder="SELECT id, r... sl_forgot_password" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Header.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/application/libraries/Header.php">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="544">
@@ -199,8 +216,8 @@
         <option value="$PROJECT_DIR$/application/controllers/Contact_us.php" />
         <option value="$PROJECT_DIR$/application/config/routes.php" />
         <option value="$PROJECT_DIR$/assets/js/pages/contact.js" />
-        <option value="$PROJECT_DIR$/application/libraries/Contact.php" />
         <option value="$PROJECT_DIR$/application/libraries/Header.php" />
+        <option value="$PROJECT_DIR$/application/libraries/Contact.php" />
       </list>
     </option>
   </component>
@@ -642,12 +659,12 @@
       <workItem from="1469894415060" duration="994000" />
       <workItem from="1470124875212" duration="2309000" />
       <workItem from="1471024924409" duration="1203000" />
-      <workItem from="1471136720350" duration="4197000" />
+      <workItem from="1471136720350" duration="4901000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122855000" />
+    <option name="totallyTimeSpent" value="123559000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2560" y="0" width="1920" height="1080" extended-state="0" />
@@ -767,13 +784,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="752">
           <caret line="47" column="3" selection-start-line="47" selection-start-column="3" selection-end-line="47" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/libraries/LoginSystem.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="992">
-          <caret line="138" column="13" selection-start-line="138" selection-start-column="13" selection-end-line="138" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1102,19 +1112,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/libraries/Contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/libraries/Header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="51" column="61" selection-start-line="51" selection-start-column="61" selection-end-line="51" selection-end-column="61" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/libraries/LoginSystem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="103" column="27" selection-start-line="101" selection-start-column="20" selection-end-line="105" selection-end-column="23" />
+          <folding>
+            <marker date="1465091664000" expanded="true" signature="1057:1100" placeholder="SELECT * FRO... sl_clients" />
+            <marker date="1465091664000" expanded="true" signature="2787:2883" placeholder="SELECT id, a... sl_clients" />
+            <marker date="1465091664000" expanded="true" signature="3367:3462" placeholder="SELECT id, r... sl_forgot_password" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/libraries/Contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="57" column="46" selection-start-line="57" selection-start-column="46" selection-end-line="57" selection-end-column="46" />
+          <folding>
+            <marker date="1471146231000" expanded="true" signature="1735:1801" placeholder="INSERT INTO mail... " />
+          </folding>
         </state>
       </provider>
     </entry>

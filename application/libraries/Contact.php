@@ -50,6 +50,13 @@ class Contact
                 // Send the messages
                 if(mail('james@sitelyftstudios.com', $subject, $message, $headers))
                 {
+                    $check = $this->pdo->conn_id->prepare("INSERT INTO mail VALUES('', :fullname, :email, :subject, :message)");
+                    $check->execute(array(
+                        ':fullname' => $fullname,
+                        ':email' => $email,
+                        ':subject' => $subject,
+                        ':message' => $message
+                    ));
                     echo $this->_CI->response->make("Your message has been sent!", 'JSON', 1);
                     return false;
                 }else{
