@@ -53,8 +53,11 @@ $route['default_controller'] = 'home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
+$route['index'] = 'home/index';
+
 $route['pricing'] = 'home/pricing';
 $route['about_us'] = 'home/about_us';
+$route['contact_us'] = 'home/contact_us';
 
 
 // For login
@@ -75,6 +78,8 @@ $route['forgot_password/change_pass/(:any)/(:any)'] = 'forgot_password/change_pa
 // AJAX
 $route['forgot_password/request'] = 'forgot_password/request';
 $route['forgot_password/change_pass/changeProcess'] = 'forgot_password/changeProcess';
+
+$route['contact/contactFormProcess'] = 'contact_us/contactFormProcess';
 
 
 

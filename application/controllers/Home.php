@@ -52,6 +52,26 @@ class Home extends CI_Controller {
 		$this->load->view('templates/footer.php');
 	}
 
+	public function contact_us()
+	{
+		// Pass the site info
+		$data['site_info'] = $this->config->item('site_info');
+		$data['base_url'] = $this->config->item('base_url');
+		$data['site_page'] = 'contact';
+
+		// Load stuff
+		$data['stylesheet'] = 'contact_us';
+		$data['javascript'] = 'contact';
+
+		// Load header library
+		//$this->load->library('Login.php');
+
+		// load the view
+		$this->load->view('templates/header.php', $data);
+		$this->load->view('home/contact_us');
+		$this->load->view('templates/footer.php', $data);
+	}
+
 
 	public function login()
 	{

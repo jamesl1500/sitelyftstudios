@@ -19,8 +19,10 @@ class Header
             {
                 case 'index':
                 case 'about':
-                case 'signup':
+                case 'contact':
                 case 'forgot_password':
+                case 'login':
+                case 'signup':
                     ?>
                         <header class="navbar navbar-logged-out full-navbar-background navbar-fixed-top">
                             <div class="navbar-inner container">
@@ -48,7 +50,7 @@ class Header
                                         <li><a href="<?php echo $base_url; ?>about_us">About Us</a></li>
                                         <li><a href="<?php echo $base_url; ?>our_services">Our Services</a></li>
                                         <li><a href="<?php echo $base_url; ?>pricing">Pricing</a></li>
-                                        <li><a href="<?php echo $base_url; ?>pricing">Contact Us</a></li>
+                                        <li><a href="<?php echo $base_url; ?>contact_us">Contact Us</a></li>
                                     </ul>
                                 </div>
                             </div>
