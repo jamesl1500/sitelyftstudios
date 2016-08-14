@@ -42,7 +42,12 @@ class Contact
             if($this->_CI->validation->isValidEmail($email))
             {
                 // Uh so i guess we just send the message?
-                $headers = 'From: '. $fullname .' <' . $email . '>' . "\r\n" . 'Reply-To: james@sitelyftstudios.com' . "\r\n" . 'X-Mailer: PHP/' . phpversion();
+                $headers = 'To: <james@sitelyftstudios.com>' . "\n";
+                $headers .= 'From: ' . $fullname . ' <'.$email.'>' . "\n";
+                $headers .= "MIME-Version: 1.0\n";
+                $headers .= "Content-Type: text/html; charset=ISO-8859-1";
+
+                // Send the messages
                 if(mail('james@sitelyftstudios.com', $subject, $message, $headers))
                 {
                     echo $this->_CI->response->make("Your message has been sent!", 'JSON', 1);
