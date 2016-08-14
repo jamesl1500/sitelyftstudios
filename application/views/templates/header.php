@@ -20,6 +20,17 @@
     <link href="<?php echo base_url('assets/css/'); ?>/<?php echo $stylesheet; ?>.css" rel="stylesheet">
     <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"> -->
     <script src="https://use.fontawesome.com/b38b622847.js"></script>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-82435788-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
 </head>
 <body>
 <?php $this->header->render($site_page); ?>
