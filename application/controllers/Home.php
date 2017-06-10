@@ -60,7 +60,7 @@ class Home extends CI_Controller {
 		$data['site_page'] = 'services';
 
 		// Load stuff
-		$data['stylesheet'] = 'about_us';
+		$data['stylesheet'] = 'services';
 
 		// Load header library
 		//$this->load->library('Login.php');
