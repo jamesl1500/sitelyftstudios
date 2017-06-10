@@ -20,7 +20,7 @@ class Header
                 case 'index':
                 case 'about':
                 case 'contact':
-                case 'forgot_password':
+                case 'services':
                 case 'login':
                 case 'signup':
                     ?>
@@ -48,8 +48,8 @@ class Header
                                 <div class="nav-links-right collapse navbar-collapse" id="main-nav-link-holder">
                                     <ul class="nav navbar-nav navbar-right">
                                         <li><a href="<?php echo $base_url; ?>about_us">About Us</a></li>
-                                        <!-- <li><a href="<?php //echo $base_url; ?>our_services">Our Services</a></li>
-                                        <li><a href="<?php //echo $base_url; ?>pricing">Pricing</a></li> -->
+                                        <li><a href="<?php //echo $base_url; ?>services">Our Services</a></li>
+                                        <li><a href="<?php //echo $base_url; ?>pricing">Pricing</a></li>
                                         <li><a href="<?php echo $base_url; ?>contact_us">Contact Us</a></li>
                                     </ul>
                                 </div>
