@@ -16,7 +16,7 @@
     <div class="h1 pull-left col-lg-8">
         <div class="blocks contact-left-form clearfix">
             <div class="topHead">
-                <h3 class="f500">Shot us a message!</h3>
+                <h3 class="f500">Shoot us a message!</h3>
             </div>
             <div class="formHolder col-lg-8">
                 <?php echo form_open('contact/contactProcess', array('id' => 'contactForm', 'action' => '')); ?>
