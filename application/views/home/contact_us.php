@@ -45,7 +45,7 @@
                 <ul>
                     <li><span class="f500">Email: </span> <span class="f300">james@sitelyftstudios.com</span></li>
                     <li><span class="f500">Phone Number: </span> <span class="f300">216-889-7822</span></li>
-                    <li><span class="f500">Address: </span> <span class="f300">Cleveland Ohio, 44130</span></li>
+                    <li><span class="f500">Address: </span> <span class="f300">Lorain Ohio, 44053</span></li>
                 </ul>
             </div>
         </div>
