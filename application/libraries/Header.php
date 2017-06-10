@@ -21,7 +21,7 @@ class Header
                 case 'about':
                 case 'contact':
                 case 'services':
-                case 'login':
+                case 'pricing':
                 case 'signup':
                     ?>
                         <header class="navbar navbar-logged-out full-navbar-background navbar-fixed-top">

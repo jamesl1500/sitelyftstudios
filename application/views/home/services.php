@@ -28,7 +28,7 @@
    				<ul>
    					<li>Fixing and patching bugs found on your website</li>
    					<li>Updating the styling and responsiveness of your website</li>
-   					<li>Updating the version and security of your WordPress installation (Wordpress only)</li>
+   					<li>Updating the version and security of your WordPress installation (WordPress only)</li>
    					<li>Regular backups</li>
    					<li>Performance updates and SEO checkups</li>
    					<li>Spam prevention and security updates</li>

@@ -71,6 +71,25 @@ class Home extends CI_Controller {
 		$this->load->view('templates/footer.php');
 	}
 
+	public function pricing()
+	{
+		// Pass the site info
+		$data['site_info'] = $this->config->item('site_info');
+		$data['base_url'] = $this->config->item('base_url');
+		$data['site_page'] = 'pricing';
+
+		// Load stuff
+		$data['stylesheet'] = 'services';
+
+		// Load header library
+		//$this->load->library('Login.php');
+
+		// load the view
+		$this->load->view('templates/header.php', $data);
+		$this->load->view('home/pricing');
+		$this->load->view('templates/footer.php');
+	}
+
 	public function contact_us()
 	{
 		// Pass the site info
